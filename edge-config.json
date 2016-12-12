@@ -1,1 +1,5 @@
-{"Stage": "edge"}
+{
+  "Parameters": {
+    "Stage": "edge"
+  }
+}

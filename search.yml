@@ -1,5 +1,13 @@
 AWSTemplateFormatVersion: "2010-09-09"
 
+Parameters:
+  Name:
+    Type: String
+  Stage:
+    Type: String
+  TemplatesBucketName:
+    Type: String
+
 Resources:
   Cluster:
     Type: AWS::Elasticsearch::Domain

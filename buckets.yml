@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Resources:
+  AssetsBucket:
+    Type: "AWS::S3::Bucket"
+    Properties: 
+      WebsiteConfiguration:
+        ErrorDocument: "index.html"
+        IndexDocument: "index.html"
+  RawDataBucket:
+    Type: "AWS::S3::Bucket"
+  AssetsPolicy: 
+    Type: "AWS::S3::BucketPolicy"
+    Properties: 
+      Bucket:
+        Ref: "AssetsBucket"
+      PolicyDocument: 
+        Statement: 
+          - Action: 
+              - "s3:GetObject"
+            Effect: "Allow"
+            Resource:
+              Fn::Join: ["", ["arn:aws:s3:::", { "Ref" : "AssetsBucket" }, "/*" ]]
+            Principal: "*"

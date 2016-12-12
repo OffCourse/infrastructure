@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  Name:
+    Type: String
+    Default: "offcourse"
+  Stage:
+    Type: String
+    Default: "dev"
+  TemplatesBucketName:
+    Type: String
+    Default: https://s3.amazonaws.com/offcourse-infrastructure
+
+Resources:
+  Tables:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      Tags: [{Key: Name, Value: !Ref Name}, {Key: Stage, Value: !Ref Stage}]
+      TemplateURL: !Join ["/", [!Ref TemplatesBucketName, tables.yml]]
+  Streams:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      Tags: [{Key: Name, Value: !Ref Name}, {Key: Stage, Value: !Ref Stage}]
+      TemplateURL: !Join ["/", [!Ref TemplatesBucketName, streams.yml]]

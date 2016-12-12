@@ -1,0 +1,49 @@
+{
+    "StackResources": [
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:774182433398:stack/offcourse-tables/0fbac980-bfee-11e6-97c0-50a686e4bb82", 
+            "ResourceStatus": "CREATE_COMPLETE", 
+            "ResourceType": "AWS::DynamoDB::Table", 
+            "Timestamp": "2016-12-11T22:09:04.827Z", 
+            "StackName": "offcourse-tables", 
+            "PhysicalResourceId": "offcourse-tables-BookmarksTable-QU99SBW5TRP2", 
+            "LogicalResourceId": "BookmarksTable"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:774182433398:stack/offcourse-tables/0fbac980-bfee-11e6-97c0-50a686e4bb82", 
+            "ResourceStatus": "CREATE_COMPLETE", 
+            "ResourceType": "AWS::DynamoDB::Table", 
+            "Timestamp": "2016-12-11T22:08:34.115Z", 
+            "StackName": "offcourse-tables", 
+            "PhysicalResourceId": "offcourse-tables-CoursesTable-1EBSZSL5PFCUX", 
+            "LogicalResourceId": "CoursesTable"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:774182433398:stack/offcourse-tables/0fbac980-bfee-11e6-97c0-50a686e4bb82", 
+            "ResourceStatus": "CREATE_COMPLETE", 
+            "ResourceType": "AWS::DynamoDB::Table", 
+            "Timestamp": "2016-12-11T22:08:34.220Z", 
+            "StackName": "offcourse-tables", 
+            "PhysicalResourceId": "offcourse-tables-IdentitiesTable-9JAJDTBWIQUS", 
+            "LogicalResourceId": "IdentitiesTable"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:774182433398:stack/offcourse-tables/0fbac980-bfee-11e6-97c0-50a686e4bb82", 
+            "ResourceStatus": "CREATE_COMPLETE", 
+            "ResourceType": "AWS::DynamoDB::Table", 
+            "Timestamp": "2016-12-11T22:08:34.620Z", 
+            "StackName": "offcourse-tables", 
+            "PhysicalResourceId": "offcourse-tables-ProfilesTable-1QD6IBCBXM266", 
+            "LogicalResourceId": "ProfilesTable"
+        }, 
+        {
+            "StackId": "arn:aws:cloudformation:us-east-1:774182433398:stack/offcourse-tables/0fbac980-bfee-11e6-97c0-50a686e4bb82", 
+            "ResourceStatus": "CREATE_COMPLETE", 
+            "ResourceType": "AWS::DynamoDB::Table", 
+            "Timestamp": "2016-12-11T22:09:05.140Z", 
+            "StackName": "offcourse-tables", 
+            "PhysicalResourceId": "offcourse-tables-ResourcesTable-1S0LYHRRF85NF", 
+            "LogicalResourceId": "ResourcesTable"
+        }
+    ]
+}

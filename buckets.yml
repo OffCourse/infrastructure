@@ -6,9 +6,9 @@ Parameters:
     Default: "offcourse"
   Stage:
     Type: String
-
     Default: "dev"
-esources:
+
+Resources:
   # AssetsBucket:
   #   Type: "AWS::S3::Bucket"
   #   Properties: 

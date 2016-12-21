@@ -22,11 +22,11 @@ Resources:
   #   Properties:
   #     Tags: [{Key: Name, Value: !Ref Name}, {Key: Stage, Value: !Ref Stage}]
   #     TemplateURL: !Join ["/", [!Ref TemplatesBucketName, streams.yml]]
-  # Buckets:
-  #   Type: "AWS::CloudFormation::Stack"
-  #   Properties:
-  #     Tags: [{Key: Name, Value: !Ref Name}, {Key: Stage, Value: !Ref Stage}]
-  #     TemplateURL: !Join ["/", [!Ref TemplatesBucketName, buckets.yml]]
+  Buckets:
+    Type: "AWS::CloudFormation::Stack"
+    Properties:
+      Tags: [{Key: Name, Value: !Ref Name}, {Key: Stage, Value: !Ref Stage}]
+      TemplateURL: !Join ["/", [!Ref TemplatesBucketName, buckets.yml]]
   # Search:
   #   Type: "AWS::CloudFormation::Stack"
   #   Properties:
